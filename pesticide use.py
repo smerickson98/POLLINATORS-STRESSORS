@@ -10,12 +10,18 @@ import numpy as np
 
 #pd.set_option('display.max_rows', None, 'display.max_columns', None)
 
+#/Users/shannonerickson/Desktop/PAI 789/Erickson_Final_Project/BEES-STRESSORS/HighEstimate_AgPestUsebyCropGroup92to19.txt
+read_file = pd.read_csv(r'/Users/shannonerickson/Desktop/PAI 789/Erickson_Final_Project/BEES-STRESSORS/HighEstimate_AgPestUsebyCropGroup92to19.txt')
+read_file.to_csv(r'/Users/shannonerickson/Desktop/PAI 789/Erickson_Final_Project/BEES-STRESSORS/HighEstimate_AgPestUsebyCropGroup92to19.txt', index=None)
+
+#/Users/shannonerickson/Desktop/PAI\ 789/Erickson_Final_Project/BEES-STRESSORS/HighEstimate_AgPestUsebyCropGroup92to19.txt
+#C:\Users\Ron\Desktop\Test\New_Products.csv
 
 #low_pes = pd.read_csv('LowEstimate_AgPestUsebyCropGroup92to19.txt')
 
 #print(low_pes)
                      
-hp = open('LowEstimate_AgPestUsebyCropGroup92to19.txt', 'r')
+#hp = open('LowEstimate_AgPestUsebyCropGroup92to19.txt', 'r')
 #open txt file with pesticide data
 #hp refers to high estimate pesticide use data
 #'r' is the mode that will specify the way to open the file, r will read the file
@@ -28,14 +34,14 @@ hp = open('LowEstimate_AgPestUsebyCropGroup92to19.txt', 'r')
 #for line in lines:
     #print(line)
 
-with hp as p:
-    for line in p:
-        print(line)
-        
-data_in = np.loadtxt('LowEstimate_AgPestUsebyCropGroup92to19.txt', dtype = int)
+#with hp as p:
+    #for line in p:
+        #print(line)
+        #
+#data_in = np.loadtxt('LowEstimate_AgPestUsebyCropGroup92to19.txt', dtype = int)
 
-idx = np.where(np.logical_and(data_in[:,0]>2, data_in[:,0]<6))[0]
+#idx = np.where(np.logical_and(data_in[:,0]>2, data_in[:,0]<6))[0]
 
-np.savetxt('xyz_filtered.txt', data_in[idx,:], fmt = '%d')
+#np.savetxt('xyz_filtered.txt', data_in[idx,:], fmt = '%d')
 
 
