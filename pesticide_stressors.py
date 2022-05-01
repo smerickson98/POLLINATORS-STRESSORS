@@ -51,7 +51,22 @@ high_pest.drop('Other_crops', inplace=True, axis=1)
 
 #create new dataframe for change in pesticide use
 US_high_pest = pd.DataFrame(high_pest)
+US_high_pest = US_high_pest.fillna(0)
 
+print(US_high_pest)
+#If year and state and FIPS are the same - add up the hp_kg
+#US_high_pest = US_high_pest.fillna(0)
+
+#US_high_pest.set_index('Year', 'State', inplace=True)
+#US_high_pest['tot_hp_kg'] = []
+
+
+#for x in US_high_pest:
+    #if US_high_pest['State'] == US_high_pest['State'] and US_high_pest['Year'] == US_high_pest['Year'] and US_high_pest['State_FIPS_code'] == US_high_pest['State_FIPS_code']:
+        #sum(high_pest['hp_kg'])
+        
+    
+                        
 
 #US_high_pest
 
