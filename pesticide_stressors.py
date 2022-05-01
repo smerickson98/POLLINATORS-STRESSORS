@@ -8,6 +8,7 @@ Created on Fri Apr 29 15:56:04 2022
 #pesticide_stressors.py
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 #%%A - Setting up the CSV file
 hp = pd.read_csv('HighEstimate_AgPestUsebyCropGroup92to19.txt', sep = '\t')
 
@@ -51,9 +52,54 @@ high_pest.drop('Other_crops', inplace=True, axis=1)
 
 #create new dataframe for change in pesticide use
 US_high_pest = pd.DataFrame(high_pest)
+#fill in blanks with zeros
 US_high_pest = US_high_pest.fillna(0)
 
-print(US_high_pest)
+#group the States and Years together
+states_group1 = US_high_pest.groupby(['State_FIPS_code', 'State', 'Year'])
+#combine the 'hp_kg' for different compounds into one total for the State/Year groups
+state_totals = states_group1['hp_kg'].sum()
+
+
+
+#import matplotlib.pyplot as plt
+
+#plt.plot(xAxis,yAxis)
+#plt.title('title name')
+#plt.xlabel('xAxis name')
+#plt.ylabel('yAxis name')
+#plt.show()
+
+#print(state_totals)
+#print(US_high_pest)
+#print(US_high_pest['state_totals'])
+#print(US_high_pest['hp_kg'].sum())
+#US_high_pest.drop('Compound', inplace=True, axis=1)
+
+#if US_high_pest == US_high_pest.duplicated(subset=['State', 'Year']):
+    #hp_kg_tot=['hp_kg'].sum()
+
+#print(hp_kg_tot)
+#US_high_pest.groupby('Year', as_index=False)
+#print(US_high_pest.head(50))
+#US_high_pest.set_index('Year', inplace=True)
+#US_high_pest.groupby('State_FIPS_code', as_index=False).agg(State_FIPS_code=("State_FIPS_code", "first"),
+                                           #State=("State", "first"),
+                                           #Year=("Year", "first"),
+                                           #hp_kg_tot=("hp_kg", "sum"))
+
+
+
+
+
+
+
+#if US_high_pest['State'] == US_high_pest['State'] and US_high_pest['Year'] == US_high_pest['Year']:
+    #print(US_high_pest)
+#US_high_pest['tot_hp_hg'] = US_high_pest.groupby('State_FIPS_code')
+#when year, fips, and year are all the same add up the ['hp_kg' column]
+
+#print(US_high_pest)
 #If year and state and FIPS are the same - add up the hp_kg
 #US_high_pest = US_high_pest.fillna(0)
 
