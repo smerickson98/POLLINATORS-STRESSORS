@@ -50,28 +50,125 @@ low_pest.drop('State_FIPS_code', inplace=True, axis=1)
 #add total pesticide use per state per year
 
 groups2 = low_pest.groupby(['Year','State'])['hp_kg'].sum()/1e6
-#totals = groups['hp_kg'].sum()
-#print(groups2.to_string())
 #we want the total pesticide amount to match up with each state/year pair so we groupby them and then sum the remaining columns
-#print the string to compare to the graph we will produce to make sure it is correct
 
-#from wilcoxen
-#groups = data.groupby(['State_FIPS_code', 'State', 'Year'])
-#totals = groups['hp_kg'].sum()
-
-#fig2=
 groups2.unstack().plot()
 #unstack the groupby data in order to plot the Years and Pesticide Amounts by State
 plt.title('Change in Pesticide Use (Low)')
 plt.xlabel('Year')
 plt.ylabel('Total pesticide use (kg in Millions)')
 plt.ticklabel_format(style='plain')
-#plt.legend(fontsize=4)
 plt.legend(fontsize=5, bbox_to_anchor=(1.02, 1), loc='upper right', borderaxespad=0)
-#plt.figure(dpi=300)
 plt.savefig('Low_Pesticide.png')
 plt.show()
-#fig2.savefig('Low Pesticide.png')
-#format the graph with labels and styles
+#format figure of low estimated pesticide use over the years
 
-#print('\nLOW PEST', '\n', groups2.to_string(),'\n')
+
+bees2 = list(groups2.items())
+#create list of grouped data
+
+#%% 2015 BEE DATA
+bee2015 = []
+for y in bees2:
+    if 2015 in y[0]:
+        bee2015.append(y)
+#empty list to fill in 2015 data
+def Sort_Tuple(bee2015):
+    bee2015.sort(key = lambda x: x[1])
+    return bee2015
+#sort 2015 data
+print('\n2015 LOWEST STATE PESTICIDE USERS TO HIGHEST STATE PESTICIDE USERS','\n', Sort_Tuple(bee2015), '\n')
+
+bees2015 = Sort_Tuple(bee2015)
+lowest_users15 = bees2015[0:3]
+print('\n3 LOWEST PESTICIDE STATE USERS IN 2015', '\n', lowest_users15, '\n')
+
+highest_users15 = bees2015[-3:]
+print('\n3 HIGHEST PESTICIDE STATE USERS IN 2015', '\n', highest_users15, '\n')
+#print highest and lowest users in order (low to high)
+#%% 2016 BEE DATA
+bee2016 = []
+for y in bees2:
+    if 2016 in y[0]:
+        bee2016.append(y)
+#repeat 2015 steps for rest of code to 2019
+def Sort_Tuple(bee2016):
+    bee2016.sort(key = lambda x: x[1])
+    return bee2016
+
+print('\n2016 LOWEST STATE PESTICIDE USERS TO HIGHEST STATE PESTICIDE USERS','\n', Sort_Tuple(bee2016), '\n')
+
+#print('\n2015 LOWEST STATE PESTICIDE USERS TO HIGHEST STATE PESTICIDE USERS', Sort_Tuple(bee2015))
+
+bees2016 = Sort_Tuple(bee2016)
+lowest_users16 = bees2016[0:3]
+print('\n3 LOWEST PESTICIDE STATE USERS IN 2016', '\n', lowest_users16, '\n')
+
+highest_users16 = bees2016[-3:]
+print('\n3 HIGHEST PESTICIDE STATE USERS IN 2016', '\n', highest_users16, '\n')
+
+#%% 2017 BEE DATA
+bee2017 = []
+for y in bees2:
+    if 2017 in y[0]:
+        bee2017.append(y)
+
+def Sort_Tuple(bee2017):
+    bee2017.sort(key = lambda x: x[1])
+    return bee2017
+
+print('\n2017 LOWEST STATE PESTICIDE USERS TO HIGHEST STATE PESTICIDE USERS','\n', Sort_Tuple(bee2017), '\n')
+
+#print('\n2015 LOWEST STATE PESTICIDE USERS TO HIGHEST STATE PESTICIDE USERS', Sort_Tuple(bee2015))
+
+bees2017 = Sort_Tuple(bee2017)
+lowest_users17 = bees2017[0:3]
+print('\n3 LOWEST PESTICIDE STATE USERS IN 2017', '\n', lowest_users17, '\n')
+
+highest_users17 = bees2017[-3:]
+print('\n3 HIGHEST PESTICIDE STATE USERS IN 2017', '\n', highest_users17, '\n')
+
+#%% 2018 BEE DATA
+bee2018 = []
+for y in bees2:
+    if 2018 in y[0]:
+        bee2018.append(y)
+
+def Sort_Tuple(bee2018):
+    bee2018.sort(key = lambda x: x[1])
+    return bee2018
+
+print('\n2018 LOWEST STATE PESTICIDE USERS TO HIGHEST STATE PESTICIDE USERS','\n', Sort_Tuple(bee2018), '\n')
+
+#print('\n2015 LOWEST STATE PESTICIDE USERS TO HIGHEST STATE PESTICIDE USERS', Sort_Tuple(bee2015))
+
+bees2018 = Sort_Tuple(bee2018)
+lowest_users18 = bees2018[0:3]
+print('\n3 LOWEST PESTICIDE STATE USERS IN 2018', '\n', lowest_users18, '\n')
+
+highest_users18 = bees2018[-3:]
+print('\n3 HIGHEST PESTICIDE STATE USERS IN 2018', '\n', highest_users18, '\n')
+
+#%% 2019 BEE DATA
+bee2019 = []
+for y in bees2:
+    if 2019 in y[0]:
+        bee2019.append(y)
+
+def Sort_Tuple(bee2019):
+    bee2019.sort(key = lambda x: x[1])
+    return bee2019
+
+print('\n2019 LOWEST STATE PESTICIDE USERS TO HIGHEST STATE PESTICIDE USERS','\n', Sort_Tuple(bee2019), '\n')
+
+#print('\n2015 LOWEST STATE PESTICIDE USERS TO HIGHEST STATE PESTICIDE USERS', Sort_Tuple(bee2015))
+
+bees2019 = Sort_Tuple(bee2019)
+lowest_users19 = bees2019[0:3]
+print('\n3 LOWEST PESTICIDE STATE USERS IN 2019', '\n', lowest_users19, '\n')
+
+highest_users19 = bees2019[-3:]
+print('\n3 HIGHEST PESTICIDE STATE USERS IN 2019', '\n', highest_users19, '\n')
+
+
+

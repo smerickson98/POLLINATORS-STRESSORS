@@ -51,43 +51,33 @@ high_pest.drop('State_FIPS_code', inplace=True, axis=1)
 #add total pesticide use per state per year
 
 groups = high_pest.groupby(['Year','State'])['hp_kg'].sum()/1e6
-#totals = groups['hp_kg'].sum()
-#print(groups.to_string())
+
 #we want the total pesticide amount to match up with each state/year pair so we groupby them and then sum the remaining columns
-#print the string to compare to the graph we will produce to make sure it is correct
 
-#from wilcoxen
-#groups = data.groupby(['State_FIPS_code', 'State', 'Year'])
-#totals = groups['hp_kg'].sum()
-
-#fig1=
 groups.unstack().plot()
 #unstack the groupby data in order to plot the Years and Pesticide Amounts by State
 plt.title('Change in Pesticide Use (High)')
 plt.xlabel('Year')
 plt.ylabel('Total pesticide use (kg in Millions)')
 plt.ticklabel_format(style='plain')
-#plt.legend(fontsize=4)
 plt.legend(fontsize=5, bbox_to_anchor=(1.02, 1), loc='upper right', borderaxespad=0)
-#plt.figure(dpi=300)
 plt.savefig('High_Pesticide.png')
 plt.show()
-#fig1.savefig('High Pesticide.png')
-#format the graph with labels and styles
+#save and format graph of high estimated pesticide use over the years
 
 bees = list(groups.items())
-#print(bees)
+#create a list of groups
 
 #%% 2015 BEE DATA
 bee2015 = []
 for y in bees:
     if 2015 in y[0]:
         bee2015.append(y)
-
+#create empty list and fill with 2015 data
 def Sort_Tuple(bee2015):
     bee2015.sort(key = lambda x: x[1])
     return bee2015
-
+#sort 2015 data by pesticide use
 print('\n2015 LOWEST STATE PESTICIDE USERS TO HIGHEST STATE PESTICIDE USERS','\n', Sort_Tuple(bee2015), '\n')
 
 bees2015 = Sort_Tuple(bee2015)
@@ -96,13 +86,13 @@ print('\n3 LOWEST PESTICIDE STATE USERS IN 2015', '\n', lowest_users15, '\n')
 
 highest_users15 = bees2015[-3:]
 print('\n3 HIGHEST PESTICIDE STATE USERS IN 2015', '\n', highest_users15, '\n')
-
+#print and sort highest and lowest users (low to high)
 #%% 2016 BEE DATA
 bee2016 = []
 for y in bees:
     if 2016 in y[0]:
         bee2016.append(y)
-
+#repeat 2015 steps down the code to 2019
 def Sort_Tuple(bee2016):
     bee2016.sort(key = lambda x: x[1])
     return bee2016
