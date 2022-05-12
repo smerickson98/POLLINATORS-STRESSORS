@@ -84,9 +84,9 @@ Script running order and outputs:
 high_pest_estimate.py and low_pest_estimate.py
 
 Either script can be ran first and will show pesticide use trends through a line graph from 1992 - 2019
-The following figure shows the high estimate for pesticide use from 1992 to 2019 in the US: ![high pest use](High_pesticide.png "high pest use")
+The following figure shows the high estimate for pesticide use from 1992 to 2019 in the US: ![high pest use](High_Pesticide.png "high pest use")
 
-The following figure shows the low estimate for pesticide use from 1992 to 2019 in the US: ![low pest use](Low_pesticide.png "low pest use")
+The following figure shows the low estimate for pesticide use from 1992 to 2019 in the US: ![low pest use](Low_Pesticide.png "low pest use")
 
 Outputs = High_pesticide.png, Low_pesticide.png 
 This script shows the trends over the years for each state in pesticide use (low and high estimated use)
