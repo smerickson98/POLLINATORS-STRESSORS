@@ -92,29 +92,34 @@ how the honeybee population losses change over the years as well as to see if th
 The following figure shows honeybee CCD loss percentages by state: ![ccd losses](2015TOTALSTATECCDLOSSES.png "CCD Losses")
 The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: ![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2015.png "CCD Losses For Highest and Lowest States")
 The following figure shows the different percentages of CCD stressors that US colonies faced annually : ![ccd stressors](PIECHART2015STRESSORSFORUS.png "CCD Stresors")
-2015TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2015.png, PIECHART2015STRESSORSFORUS.png
+Outputs = 2015TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2015.png, PIECHART2015STRESSORSFORUS.png
 This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
 honeybee losses and the 3 states with the highest numbers of honeybee losses, and then combines them.
 The script prints out the ccd csv information to create two lists for the pie chart to show the different percentages of
 CCD stressors that honeybee colonies are impacted by
 
-4. colonies_2016 - 2016TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2016.png, PIECHART2016STRESSORSFORUS.png
-This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
-honeybee losses and the 3 states with the highest numbers of honeybee losses, and then combines them.
-The script prints out the ccd csv information to create two lists for the pie chart to show the different percentages of
-CCD stressors that honeybee colonies are impacted by
-The 2016TOTALSTATECCDLOSSES.png shows honeybee CCD loss percentages by state
-The HIGHESTANDLOWESTSTATECCDLOSSES2016.png shows honeybee CCD loss percentages by the highest and lowest ranking states
-The PIECHART2016STRESSORSFORUS.png shows the different percentages of CCD stressors that US colonies faced annually 
 
-5. colonies_2017 - 2017TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2017.png, PIECHART2017STRESSORSFORUS.png
+4. colonies_2016 - 
+The following figure shows honeybee CCD loss percentages by state: ![ccd losses](2016TOTALSTATECCDLOSSES.png "CCD Losses")
+The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: ![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2016.png "CCD Losses For Highest and Lowest States")
+The following figure shows the different percentages of CCD stressors that US colonies faced annually : ![ccd stressors](PIECHART2016STRESSORSFORUS.png "CCD Stresors")
+Outputs = 2016TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2016.png, PIECHART2016STRESSORSFORUS.png
 This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
 honeybee losses and the 3 states with the highest numbers of honeybee losses, and then combines them.
 The script prints out the ccd csv information to create two lists for the pie chart to show the different percentages of
 CCD stressors that honeybee colonies are impacted by
-The 2017TOTALSTATECCDLOSSES.png shows honeybee CCD loss percentages by state
-The HIGHESTANDLOWESTSTATECCDLOSSES2017.png shows honeybee CCD loss percentages by the highest and lowest ranking states
-The PIECHART2017STRESSORSFORUS.png shows the different percentages of CCD stressors that US colonies faced annually 
+
+
+5. colonies_2017 - 
+The following figure shows honeybee CCD loss percentages by state: ![ccd losses](2017TOTALSTATECCDLOSSES.png "CCD Losses")
+The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: ![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2017.png "CCD Losses For Highest and Lowest States")
+The following figure shows the different percentages of CCD stressors that US colonies faced annually : ![ccd stressors](PIECHART2017STRESSORSFORUS.png "CCD Stresors")
+Outputs = 2017TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2017.png, PIECHART2017STRESSORSFORUS.png
+This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
+honeybee losses and the 3 states with the highest numbers of honeybee losses, and then combines them.
+The script prints out the ccd csv information to create two lists for the pie chart to show the different percentages of
+CCD stressors that honeybee colonies are impacted by
+
 
 6. colonies_2018 - 2018TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2018.png, PIECHART2018STRESSORSFORUS.png
 This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
