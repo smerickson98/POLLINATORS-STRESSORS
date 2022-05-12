@@ -4,7 +4,7 @@
 description:
 
 This project looks at pesticide use trends from 1992 to 2019 in the United States along with Colony Collapse Disorder (CCD) Honeybee Colony Survey 
-Data from 2015-2019. It is my intention to see if there were trends in these data sets as CCD is an important factor in Honeybee loss and health.
+Data from 2015-2019. It is my intention to see if there are trends in these data sets as CCD is an important factor in Honeybee loss and health.
 Additionally, CCD does not seem to have one cause, but is possibly a mixture of different issues including
 habitat loss/degradation, malnutrition for bees, climate change, pests, diseases, genetics, pesticides, management practices, and more.
 CCD is the phenomenon where bees abandon their hives for typically unknown reasons, which is different than colony loss from death as in CCD 
@@ -24,9 +24,11 @@ data inputs:
 These two data files are used in the high_pest_estimate and low_pest_estimate scripts.
 They are the estimated annual pesticide use for the United States between 1992 and 2019
 They reflect a high and a low estimate for pesticide use
+
 Citation:
 Wieben, C.M., 2021, Estimated annual agricultural pesticide use by major crop or crop group for states of the conterminous United States, 1992-2019 
 (including preliminary estimates for 2018-19): U.S. Geological Survey data release, https://doi.org/10.5066/P900FZ6Y.
+
 Website I found the data on: 
 https://www.sciencebase.gov/catalog/item/6081ae7cd34e8564d6866222
 
@@ -41,35 +43,45 @@ formatted CSV with the data)
 4. beespop2015.csv
 5. ccd_2015.csv
 The PDF is sourced from the USDA/Cornell website and information was taken from it to create 2 csvs with excel
-#4 is quartlerly bee population data from 2015
+
+#4 is quarterly bee population data from 2015
+
 #5 is annual colonies affected by CCD STRESSORS
 
 6. BeeColonies-08-01-2017.pdf
 7. beespop2016.csv
 8. ccd_2016.csv
 The PDF is sourced from the USDA/Cornell website and information was taken from it to create 2 csvs with excel
-#7 is quartlerly bee population data from 2016
+
+#7 is quarterly bee population data from 2016
+
 #8 is annual colonies affected by CCD STRESSORS
 
 9. BeeColonies-08-01-2018.pdf
 10. beespop2017.csv
 11. ccd_2017.csv
 The PDF is sourced from the USDA/Cornell website and information was taken from it to create 2 csvs with excel
-#10 is quartlerly bee population data from 2017
+
+#10 is quarterly bee population data from 2017
+
 #11 is annual colonies affected by CCD STRESSORS
 
 12. hcny0819.pdf
 13. beespop2018.csv
 14. ccd_2018_april_june.csv
 The PDF is sourced from the USDA/Cornell website and information was taken from it to create 2 csvs with excel
-#13 is quartlerly bee population data from 2018
+
+#13 is quarterly bee population data from 2018
+
 #14 is colonies affected by CCD STRESSORS between april and june of 2018 because there was not annual data, so one quarter was selected
 
 12. hcny0820.pdf
 13. beespop2019.csv
 14. ccd_2019_oct_dec.csv
 The PDF is sourced from the USDA/Cornell website and information was taken from it to create 2 csvs with excel
-#13 is quartlerly bee population data from 2019
+
+#13 is quarterly bee population data from 2019
+
 #14 is colonies affected by CCD STRESSORS between october and december of 2019 because there was not annual data, so one quarter was selected
 
 Citation: 
@@ -84,9 +96,11 @@ Script running order and outputs:
 high_pest_estimate.py and low_pest_estimate.py
 
 Either script can be ran first and will show pesticide use trends through a line graph from 1992 - 2019
-The following figure shows the high estimate for pesticide use from 1992 to 2019 in the US: ![high pest use](High_Pesticide.png "high pest use")
+The following figure shows the high estimate for pesticide use from 1992 to 2019 in the US: 
+![high pest use](High_Pesticide.png "high pest use")
 
-The following figure shows the low estimate for pesticide use from 1992 to 2019 in the US: ![low pest use](Low_Pesticide.png "low pest use")
+The following figure shows the low estimate for pesticide use from 1992 to 2019 in the US: 
+![low pest use](Low_Pesticide.png "low pest use")
 
 Outputs = High_pesticide.png, Low_pesticide.png 
 This script shows the trends over the years for each state in pesticide use (low and high estimated use)
@@ -96,89 +110,107 @@ Scripts 3 - 7 are the same steps repeated for years 2015 - 2019. This aims to pr
 how the honeybee population losses change over the years as well as to see if the biggest stressors are changing. 
 
 3. colonies_2015 - 
-The following figure shows honeybee CCD loss percentages by state: ![ccd losses](2015TOTALSTATECCDLOSSES.png "CCD Losses")
+The following figure shows honeybee CCD loss percentages by state: 
+![ccd losses](2015TOTALSTATECCDLOSSES.png "CCD Losses")
 
-The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: ![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2015.png "CCD Losses For Highest and Lowest States")
+The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: 
+![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2015.png "CCD Losses For Highest and Lowest States")
 
-The following figure shows the different percentages of CCD stressors that US colonies faced annually : ![ccd stressors](PIECHART2015STRESSORSFORUS.png "CCD Stresors")
+The following figure shows the different percentages of CCD stressors that US colonies faced annually : 
+![ccd stressors](PIECHART2015STRESSORSFORUS.png "CCD Stresors")
 
 Outputs = 2015TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2015.png, PIECHART2015STRESSORSFORUS.png
 This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
 honeybee losses and the 3 states with the highest numbers of honeybee losses, and then combines them.
 The script prints out the ccd csv information to create two lists for the pie chart to show the different percentages of
-CCD stressors that honeybee colonies are impacted by
+CCD stressors that honeybee colonies are impacted by.
 
 
 4. colonies_2016 - 
-The following figure shows honeybee CCD loss percentages by state: ![ccd losses](2016TOTALSTATECCDLOSSES.png "CCD Losses")
+The following figure shows honeybee CCD loss percentages by state: 
+![ccd losses](2016TOTALSTATECCDLOSSES.png "CCD Losses")
 
-The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: ![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2016.png "CCD Losses For Highest and Lowest States")
+The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: 
+![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2016.png "CCD Losses For Highest and Lowest States")
 
-The following figure shows the different percentages of CCD stressors that US colonies faced annually : ![ccd stressors](PIECHART2016STRESSORSFORUS.png "CCD Stresors")
+The following figure shows the different percentages of CCD stressors that US colonies faced annually : 
+![ccd stressors](PIECHART2016STRESSORSFORUS.png "CCD Stresors")
 
 Outputs = 2016TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2016.png, PIECHART2016STRESSORSFORUS.png
 This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
 honeybee losses and the 3 states with the highest numbers of honeybee losses, and then combines them.
 The script prints out the ccd csv information to create two lists for the pie chart to show the different percentages of
-CCD stressors that honeybee colonies are impacted by
+CCD stressors that honeybee colonies are impacted by.
 
 
 5. colonies_2017 - 
-The following figure shows honeybee CCD loss percentages by state: ![ccd losses](2017TOTALSTATECCDLOSSES.png "CCD Losses")
+The following figure shows honeybee CCD loss percentages by state: 
+![ccd losses](2017TOTALSTATECCDLOSSES.png "CCD Losses")
 
-The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: ![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2017.png "CCD Losses For Highest and Lowest States")
+The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: 
+![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2017.png "CCD Losses For Highest and Lowest States")
 
-The following figure shows the different percentages of CCD stressors that US colonies faced annually : ![ccd stressors](PIECHART2017STRESSORSFORUS.png "CCD Stresors")
+The following figure shows the different percentages of CCD stressors that US colonies faced annually : 
+![ccd stressors](PIECHART2017STRESSORSFORUS.png "CCD Stresors")
 
 Outputs = 2017TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2017.png, PIECHART2017STRESSORSFORUS.png
 This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
 honeybee losses and the 3 states with the highest numbers of honeybee losses, and then combines them.
 The script prints out the ccd csv information to create two lists for the pie chart to show the different percentages of
-CCD stressors that honeybee colonies are impacted by
+CCD stressors that honeybee colonies are impacted by.
 
 
 6. colonies_2018 - 
-The following figure shows honeybee CCD loss percentages by state: ![ccd losses](2018TOTALSTATECCDLOSSES.png "CCD Losses")
+The following figure shows honeybee CCD loss percentages by state: 
+![ccd losses](2018TOTALSTATECCDLOSSES.png "CCD Losses")
 
-The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: ![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2018.png "CCD Losses For Highest and Lowest States")
+The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: 
+![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2018.png "CCD Losses For Highest and Lowest States")
 
-The following figure shows the different percentages of CCD stressors that US colonies faced between April to June 2018 because there was not annual data : ![ccd stressors](PIECHART2018STRESSORSFORUS.png "CCD Stresors")
+The following figure shows the different percentages of CCD stressors that US colonies faced between April to June 2018 because there was not annual data : 
+![ccd stressors](PIECHART2018STRESSORSFORUS.png "CCD Stresors")
 
 Outputs = 2018TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2018.png, PIECHART2018STRESSORSFORUS.png
 This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
 honeybee losses and the 3 states with the highest numbers of honeybee losses, and then combines them.
 The script prints out the ccd csv information to create two lists for the pie chart to show the different percentages of
-CCD stressors that honeybee colonies are impacted by
+CCD stressors that honeybee colonies are impacted by.
 
 
 7. colonies_2019 - 
-The following figure shows honeybee CCD loss percentages by state: ![ccd losses](2019TOTALSTATECCDLOSSES.png "CCD Losses")
+The following figure shows honeybee CCD loss percentages by state: 
+![ccd losses](2019TOTALSTATECCDLOSSES.png "CCD Losses")
 
-The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: ![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2019.png "CCD Losses For Highest and Lowest States")
+The following figure shows honeybee CCD loss percentages by the highest and lowest ranking states: 
+![ccd losses for highest and lowest states](HIGHESTANDLOWESTSTATECCDLOSSES2019.png "CCD Losses For Highest and Lowest States")
 
-The following figure shows the different percentages of CCD stressors that US colonies faced between October to December 2019 because there was not annual data : ![ccd stressors](PIECHART2019STRESSORSFORUS.png "CCD Stresors")
+The following figure shows the different percentages of CCD stressors that US colonies faced between October to December 2019 because there was not annual data : 
+![ccd stressors](PIECHART2019STRESSORSFORUS.png "CCD Stresors")
 
 Outputs = 2019TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2019.png, PIECHART2019STRESSORSFORUS.png
 This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
 honeybee losses and the 3 states with the highest numbers of honeybee losses, and then combines them.
 The script prints out the ccd csv information to create two lists for the pie chart to show the different percentages of
-CCD stressors that honeybee colonies are impacted by
+CCD stressors that honeybee colonies are impacted by.
 
 
 Findings:
 When looking at CCD stressors from 2015 to 2019, it was interesting to see how much
 the varroamites stressor increased within the pie charts over the years: 
+
 ![ccd stressors](PIECHART2015STRESSORSFORUS.png "CCD Stresors")
 ![ccd stressors](PIECHART2019STRESSORSFORUS.png "CCD Stresors")
 
 Additionally, New Mexico was a top state for CCD losses from 2016 - 2018, but then
 had the least amount of CCD losses in 2019: 
+
 ![ccd losses](2016TOTALSTATECCDLOSSES.png "CCD Losses")
 ![ccd losses](2019TOTALSTATECCDLOSSES.png "CCD Losses")
 
 Many of the states shifted around significantly in the CCD bar graphs and the pesticide use over the years line graph.
 For example, California was the top pesticide user from 1992 and then dropped way down in the list to be using ~6.85 M kg
 of pesticide compared to them using ~65.21 M kg of pesticide in 2015: 
+
 ![high pest use](High_Pesticide.png "high pest use")
 
 The pesticide graphs were really interesting because although pesticides reflected a smaller portion of CCD stressors than I had
