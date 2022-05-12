@@ -89,7 +89,7 @@ USDA. (n.d.-b). Publication | Honey Bee Colonies | ID: rn301137d | USDA Economic
 Retrieved May 11, 2022, from https://usda.library.cornell.edu/concern/publications/rn301137d?locale=en
 
 
-## Script running order and outputs:
+## script running order and outputs:
 
 1.  &
 2. 
@@ -194,7 +194,7 @@ The script prints out the ccd csv information to create two lists for the pie ch
 CCD stressors that honeybee colonies are impacted by.
 
 
-## Findings:
+## findings:
 
 When looking at CCD stressors from 2015 to 2019, it was interesting to see how much
 the varroamites stressor increased within the pie charts over the years: 
