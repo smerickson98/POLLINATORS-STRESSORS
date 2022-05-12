@@ -1,7 +1,7 @@
 # BEES-STRESSORS
 # shannon erickson
 
-description:
+## description:
 
 This project looks at pesticide use trends from 1992 to 2019 in the United States along with Colony Collapse Disorder (CCD) Honeybee Colony Survey 
 Data from 2015-2019. It is my intention to see if there are trends in these data sets as CCD is an important factor in Honeybee loss and health.
@@ -15,7 +15,7 @@ biodiversity (and with that the environment!), agriculture and the economy, food
 This being said, it is important to look into the relationship between Honeybee populations and the different stressors associated with CCD
 
 
-data inputs:
+## data inputs:
 
 1. HighEstimate_AgPestUsebyCropGroup92to19.txt
 
@@ -89,7 +89,7 @@ USDA. (n.d.-b). Publication | Honey Bee Colonies | ID: rn301137d | USDA Economic
 Retrieved May 11, 2022, from https://usda.library.cornell.edu/concern/publications/rn301137d?locale=en
 
 
-Script running order and outputs:
+## Script running order and outputs:
 
 1.  &
 2. 
@@ -194,7 +194,8 @@ The script prints out the ccd csv information to create two lists for the pie ch
 CCD stressors that honeybee colonies are impacted by.
 
 
-Findings:
+## Findings:
+
 When looking at CCD stressors from 2015 to 2019, it was interesting to see how much
 the varroamites stressor increased within the pie charts over the years: 
 
