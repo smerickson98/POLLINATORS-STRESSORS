@@ -179,7 +179,7 @@ had the least amount of CCD losses in 2019:
 Many of the states shifted around significantly in the CCD bar graphs and the pesticide use over the years line graph.
 For example, California was the top pesticide user from 1992 and then dropped way down in the list to be using ~6.85 M kg
 of pesticide compared to them using ~65.21 M kg of pesticide in 2015: 
-![high pest use](High_pesticide.png "US High Estimates of Pesticide Use")
+![high pest use](High_Pesticide.png "high pest use")
 
 The pesticide graphs were really interesting because although pesticides reflected a smaller portion of CCD stressors than I had
 anticipated, it showed the extremely large amounts of pesticides that states are using. 
