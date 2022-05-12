@@ -88,7 +88,9 @@ Additionally it will sort the lowest to highest pesticide users by state from 20
 Scripts 3 - 7 are the same steps repeated for years 2015 - 2019. This aims to produce graphs that can be compared to see
 how the honeybee population losses change over the years as well as to see if the biggest stressors are changing. 
 
-3. colonies_2015 - 2015TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2015.png, PIECHART2015STRESSORSFORUS.png
+3. colonies_2015 - 
+The following figure shows honeybee CCD loss percentages by state: ![ccd losses](2015TOTALSTATECCDLOSSES.png "CCD Losses")
+2015TOTALSTATECCDLOSSES.png, HIGHESTANDLOWESTSTATECCDLOSSES2015.png, PIECHART2015STRESSORSFORUS.png
 This script sorts the honeybee losses by state from low to high. Then it shows the 3 states with the lowest numbers of 
 honeybee losses and the 3 states with the highest numbers of honeybee losses, and then combines them.
 The script prints out the ccd csv information to create two lists for the pie chart to show the different percentages of
